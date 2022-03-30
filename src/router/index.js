@@ -13,14 +13,17 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
 
 const router = new VueRouter({
+  // 路由页面不会刷新 url中包含#
+  // mode: 'hash',
+  // 路由页面会刷新 url中包含# 后端异常会直接报错
+  mode: 'history',
+  // 页面跳转之后返回页面滚动重新置顶
+  scrollBehavior: () => ({ y: 0 }),
   routes
 })
 

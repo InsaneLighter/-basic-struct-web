@@ -24,9 +24,7 @@ module.exports = {
     //端口号
     port: port,
     //自动启动浏览器
-    open: true,
-    //代理
-    proxy: {}
+    open: true
   },
   configureWebpack: {
     //页面标题
@@ -34,7 +32,7 @@ module.exports = {
     resolve: {
       alias: {
         // 包别名设置
-        '@': resolve('src'),
+        '@': resolve('src')
       }
     }
   },
