@@ -2,6 +2,7 @@
   "name": "basic-struct-web",
   "version": "0.1.0",
   "author": "Huang",
+  "email": "mail@huanghong.top",
   "description": "basic web struct",
   "scripts": {
     "serve": "vue-cli-service serve",
