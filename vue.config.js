@@ -1,5 +1,4 @@
 'use strict'
-
 const path = require('path')
 const port = 17777
 
@@ -30,7 +29,8 @@ module.exports = {
     proxy: {}
   },
   configureWebpack: {
-    name: name,
+    //页面标题
+    name: "",
     resolve: {
       alias: {
         // 包别名设置
