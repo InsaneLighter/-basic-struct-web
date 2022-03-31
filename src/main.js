@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import './router/router-permission'
 import store from './store'
 
 //引入ant design vue

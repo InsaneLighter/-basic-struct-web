@@ -8,24 +8,25 @@ export const routerMap = [
         children: [
             {
                 path: 'dashboard',
-                component: (resolve) => require(['@/views/dashboard'], resolve)
+                component: (resolve) => require(['@/views/dashboard'], resolve),
+                meta: { title: '首页' }
             }
         ]
     },
     {
         path: '/403',
         component: (resolve) => require(['@/views/exception/403'], resolve),
-        hidden: true
+        meta: { title: 'NotAuthorized' },
     },
     {
         path: '/404',
         component: (resolve) => require(['@/views/exception/404'], resolve),
-        hidden: true
+        meta: { title: 'NotFound'},
     },
     {
         path: '/500',
         component: (resolve) => require(['@/views/exception/500'], resolve),
-        hidden: true
+        meta: { title: 'ServerWrong'},
     },
     //以上路由均不匹配则重定向入404页面
     {
