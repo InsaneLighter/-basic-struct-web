@@ -1,5 +1,5 @@
 <template>
-  <a-layout-sider v-model="collapsed" :trigger="null" collapsible>
+  <a-layout-sider v-model="$store.state.app.sidebar.open" :trigger="null" collapsible>
     <div class="logo"/>
     <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
       <a-menu-item key="1">
@@ -23,8 +23,9 @@ export default {
   name: "GlobalSideMenu",
   data() {
     return {
-      collapsed: false,
     };
+  },
+  methods: {
   }
 }
 </script>

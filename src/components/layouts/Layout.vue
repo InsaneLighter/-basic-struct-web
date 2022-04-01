@@ -16,12 +16,18 @@
 import GlobalFooter from './global/GlobalFooter'
 import GlobalHeader from './global/GlobalHeader'
 import GlobalSideMenu from './global/GlobalSideMenu'
+
 export default {
   name: "Layout",
   components: {
     GlobalFooter,
     GlobalHeader,
     GlobalSideMenu
+  },
+  data(){
+    return {
+
+    }
   }
 }
 </script>

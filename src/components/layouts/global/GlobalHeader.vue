@@ -3,8 +3,8 @@
     <a-layout-header style="background: #fff; padding: 0">
       <a-icon
           class="trigger"
-          :type="collapsed ? 'menu-unfold' : 'menu-fold'"
-          @click="() => (collapsed = !collapsed)"
+          :type="$store.state.app.sidebar.open ? 'menu-unfold' : 'menu-fold'"
+          @click="toggle"
       />
       <slot></slot>
     </a-layout-header>
@@ -15,8 +15,12 @@ export default {
   name: 'GlobalHeader',
   data() {
     return {
-      collapsed: false,
     };
+  },
+  methods: {
+    toggle(){
+      this.$store.dispatch('app/ToggleSidebar');
+    }
   }
 };
 </script>
