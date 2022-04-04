@@ -1,7 +1,8 @@
 import defaultSettings from '@/default-settings'
-const { tagsView, fixedHeader, sidebarLogo, uniqueOpened, showFooter, footerTxt, caseNumber } = defaultSettings
+const { title, tagsView, fixedHeader, sidebarLogo, uniqueOpened, showFooter, footerTxt, caseNumber } = defaultSettings
 
 const state = {
+  title: title,
   showSettings: false,
   tagsView: tagsView,
   fixedHeader: fixedHeader,

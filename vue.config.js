@@ -7,6 +7,7 @@ function resolve(dir) {
 }
 
 module.exports = {
+  runtimeCompiler: true,
   publicPath: process.env.PUBLIC_PATH,
   //css配置
   css: {
