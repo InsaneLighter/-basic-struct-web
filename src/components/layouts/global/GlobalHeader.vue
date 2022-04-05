@@ -1,18 +1,22 @@
 <template>
-  <a-layout>
+  <transition name="showHeader">
     <a-layout-header style="background: #fff; padding: 0">
       <a-icon
           class="trigger"
           :type="$store.state.app.sidebar.open ? 'menu-unfold' : 'menu-fold'"
           @click="toggle"
       />
-      <slot></slot>
+      <user-menu class="header-right" :theme="$store.state.app.theme"/>
     </a-layout-header>
-  </a-layout>
+  </transition>
 </template>
 <script>
+import UserMenu from "./UserMenu";
 export default {
   name: 'GlobalHeader',
+  components: {
+    UserMenu
+  },
   data() {
     return {
     };
@@ -37,9 +41,11 @@ export default {
   color: #1890ff;
 }
 
-.logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px;
+.header-right {
+  float: right;
+  height: 59px;
+  overflow: hidden;
+  white-space: nowrap;
 }
+
 </style>

@@ -3,14 +3,9 @@ const { title, tagsView, fixedHeader, sidebarLogo, uniqueOpened, showFooter, foo
 
 const state = {
   title: title,
-  showSettings: false,
-  tagsView: tagsView,
-  fixedHeader: fixedHeader,
-  sidebarLogo: sidebarLogo,
-  uniqueOpened: uniqueOpened,
-  showFooter: showFooter,
-  footerTxt: footerTxt,
-  caseNumber: caseNumber
+  footerTxt: '<a style="color: #bfb8b8" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42070302000092">鄂公网安备 42070302000092号</a>\n' +
+      '    &nbsp;\n' +
+      '    <a style="color: #bfb8b8" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">鄂ICP备2022003078号-1</a>'
 }
 
 const mutations = {

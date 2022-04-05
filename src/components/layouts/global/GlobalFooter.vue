@@ -1,8 +1,5 @@
 <template>
-  <div class="footer">
-    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42070302000092">鄂公网安备 42070302000092号</a>
-    &nbsp;
-    <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">鄂ICP备2022003078号-1</a>
+  <div class="footer" v-html="$store.state.settings.footerTxt">
   </div>
 </template>
 
@@ -27,9 +24,6 @@ export default {
   z-index: 99;
   width: 100%;
   text-align: center;
-
-  a {
-    color: #bfb8b8;
-  }
 }
+
 </style>

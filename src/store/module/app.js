@@ -1,7 +1,8 @@
 const state = {
   sidebar: {
     open: false
-  }
+  },
+  theme: 'light'
 }
 
 const mutations = {

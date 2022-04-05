@@ -1,12 +1,13 @@
 <template>
   <a-layout-sider v-model="$store.state.app.sidebar.open"
+                  :theme="$store.state.app.theme"
                   :trigger="null"
                   :collapsible="false">
     <div class="logo">{{$store.state.settings.title}}</div>
     <a-menu
         mode="inline"
         :inline-collapsed="$store.state.app.sidebar.open"
-        theme="dark"
+        :theme="$store.state.app.theme"
         @openChange="onOpenChange"
         :selectedKeys="[this.$route.path]"
         :openKeys="openKeys"
@@ -113,7 +114,6 @@ export default {
   .logo {
     font-size: 20px;
     text-align: center;
-    color: white;
     height: 40px;
     line-height: 40px;
   }
