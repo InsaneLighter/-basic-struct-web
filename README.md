@@ -1,4 +1,4 @@
-# demo
+# basic-struct-web
 
 ## Project setup
 ```
@@ -15,10 +15,7 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+###注释:
+用于基础前端后台管理框架构建
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+TODO: 菜单样式异常
